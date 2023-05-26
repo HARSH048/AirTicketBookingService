@@ -1,4 +1,4 @@
-const { StatusCode } = require("http-status-codes");
+const { StatusCodes } = require("http-status-codes");
 class ValidationEroor extends Error {
   constructor(error) {
     super();
@@ -9,7 +9,7 @@ class ValidationEroor extends Error {
     this.name = "ValidationError";
     this.message = "not able to validate the data sent in request";
     this.explanation = explanation;
-    this.statusCode = StatusCode.BAD_REQUEST;
+    this.statusCode = StatusCodes.BAD_REQUEST;
   }
 }
 

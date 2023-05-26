@@ -2,8 +2,8 @@ const express = require("express");
 const bodyparser = require("body-parser");
 const app = express();
 const apiRoutes = require("./routes/index");
-// const { PORT } = require("./config/serverconifg");
-const PORT = 3000;
+
+const PORT = 6000;
 
 const db = require("./models/index");
 const SetupandStartServer = async () => {
