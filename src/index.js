@@ -10,7 +10,7 @@ const SetupandStartServer = async () => {
   app.use(bodyparser.json());
   app.use(bodyparser.urlencoded({ extended: true }));
 
-  app.use("/api", apiRoutes);
+  app.use("/bookingservice/api", apiRoutes);
   app.listen(PORT, () => {
     console.log(`server started at ${PORT}`);
     if (process.env.DB_SYNC) {
